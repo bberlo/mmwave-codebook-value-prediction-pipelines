@@ -4,7 +4,7 @@ Author: Bram van Berlo - b.r.d.v.berlo@tue.nl
 ### Requirements
 In the requirements.txt file the needed python modules for this project are specified.
 
-## Preprocessing steps
+### Preprocessing steps
 The pre-processed dataset in '../Data' is created using the pre-processing scripts in 'pre-processing/'.
 Links to the original dataset have been added to this subdirectory as well in 'pre-processing/Radar data/Radar1' and 'pre-processing/Radar data/Radar2'.
 The pre-processing scripts are not part of the audit procedure and can therefore not be run automatically.
@@ -24,7 +24,7 @@ Follow a set of steps:
 6) Linux users: the rsplit(.) function calls and directory string depend on quoted Windows separators. Adjust the separators to Linux separators accordingly.
 7) Execute pre-processing script.
 
-# Reproducing results
+### Reproducing results
 
 The run.sh file includes all bash commands which should be run to acquire the results used in Figures 7-10 of the journal paper.
 Prior to running the bash commands, make sure that all packages listed in the requirements.txt file are installed.
@@ -35,7 +35,7 @@ Bash command for acquiring results presented in Figure 6 is not provided. Reason
 
 The Java Processing label simulation sketch files used for generating task labels are included in 'pre-processing/curvePoint label simulation'.
 
-## Plots
+### Plots
 
 Figure plots inside the journal paper were created by processing the .csv formatted results with MS Excel into a chart structure.
 
@@ -64,3 +64,4 @@ The direct statistics should be plotted as separate line graphs in separate figu
 The top-1 minimum validation subset loss statistic should be retrieved from the respective stdout file per machine learning technique manually in Streams/.
 Note: make sure that run.sh does not delete Streams/ content to be able to do this!
 The top-1 minimum validation subset loss statistic can be plotted as separate line graph in separate figures per machine learning technique.
+
